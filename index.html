@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSave - Food Waste Management</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f8f2;
+            color: #26352a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #236b45;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d8f7a5;
+        }
+
+        .hero {
+            min-height: 390px;
+            padding: 75px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(110deg, #e4f5df, #f7f9e9);
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 50px);
+            color: #236b45;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #236b45;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #174b30;
+        }
+
+        section {
+            padding: 55px 8%;
+            scroll-margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            color: #236b45;
+            margin-bottom: 12px;
+        }
+
+        .section-description {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #647066;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        .stat-card h3 {
+            color: #236b45;
+            font-size: 32px;
+        }
+
+        .stat-card p {
+            color: #687269;
+        }
+
+        .donation-section {
+            background: #eaf3e7;
+        }
+
+        .form-container {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #0000000d;
+        }
+
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccd5cb;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 85px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: 2px solid #83bb91;
+            border-color: #236b45;
+        }
+
+        .form-container .btn {
+            width: 100%;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .food-card {
+            background: white;
+            padding: 23px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #0000000d;
+            border-top: 4px solid #68a96d;
+        }
+
+        .food-icon {
+            font-size: 40px;
+        }
+
+        .food-card h3 {
+            color: #236b45;
+            margin: 8px 0;
+        }
+
+        .food-card p {
+            margin: 
